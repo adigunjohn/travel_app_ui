@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<EcommerceUiModel>(create: (context) { return EcommerceUiModel();})
       ],
       child: const MaterialApp(
+        // home: EcomScreen(),
         home: TravelUiScreen(),
       ),
     );

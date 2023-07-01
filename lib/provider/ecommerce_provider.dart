@@ -14,9 +14,23 @@ class EcommerceUiModel extends ChangeNotifier {
     GridWidget(text: 'NFT Aves 500', textt: '\$450.0',),
     GridWidget(text: 'NFT Bird 600', textt: '\$105.0',),
     GridWidget(text: 'NFT Reptiles 700', textt: '\$20.0',),
-    GridWidget(text: 'NFT Anime 800', textt: '\$159.0',),
   ];
 
+  List<GridWidget> _gridListt = [
+    GridWidget(text: 'Crypto Ape 100', textt: '\$45.0',),
+    GridWidget(text: 'Crypto Mammal 200', textt: '\$400.0',),
+    GridWidget(text: 'Crypto Rat 300', textt: '\$95.0',),
+    GridWidget(text: 'Crypto Metaverse 400', textt: '\$80.0',),
+    GridWidget(text: 'Crypto Aves 500', textt: '\$450.0',),
+    GridWidget(text: 'Crypto Bird 600', textt: '\$105.0',),
+    GridWidget(text: 'Crypto Reptiles 700', textt: '\$20.0',),
+  ];
+  UnmodifiableListView<GridWidget> get gridListt {
+    return UnmodifiableListView(_gridListt);
+  }
+  int get gridListCountt {
+    return _gridListt.length;
+  }
 
 
   List<ListWidget> _listList = [
