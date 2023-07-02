@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:travel_app_ui/provider/ecommerce_provider.dart';
 import 'package:flutter/services.dart';
+import 'package:travel_app_ui/textfield_screen.dart';
 
 int currentIndex = 0;
 
@@ -97,10 +98,15 @@ class _TravelUiScreenState extends State<TravelUiScreen> {
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
-                                    child: Icon(
-                                      Icons.menu_open_outlined,
-                                      color: Colors.black,
-                                      size: 30.0,
+                                    child: InkWell(
+                                      onTap: (){
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => TextFieldTest()));
+                                      },
+                                      child: Icon(
+                                        Icons.menu_open_outlined,
+                                        color: Colors.black,
+                                        size: 30.0,
+                                      ),
                                     ),
                                   ),
                                   SizedBox(
